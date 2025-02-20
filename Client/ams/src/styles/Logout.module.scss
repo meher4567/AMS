@@ -1,0 +1,24 @@
+// Logout.module.scss
+
+.logoutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ebe5e5; // Set background to black
+    color: #fff; // White text for contrast
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.message {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.redirectMessage {
+    font-size: 1rem;
+    color: #ccc; // Slightly lighter color for secondary text
+    margin-top: 0.25rem;
+}

@@ -1,0 +1,89 @@
+// Read.module.scss
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #f4f6f8;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+}
+
+.passengerTable {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+  thead {
+    background-color: #3f51b5;
+    color: #fff;
+
+    tr {
+      th {
+        padding: 15px 20px;
+        font-size: 1.1rem;
+        text-align: left;
+        font-weight: 600;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background-color: #f7f9fc;
+      }
+
+      &:hover {
+        background-color: #e3f2fd;
+        transition: background-color 0.3s ease;
+      }
+
+      td {
+        padding: 15px 20px;
+        font-size: 1rem;
+        color: #555;
+        border-bottom: 1px solid #ddd;
+      }
+
+      td:first-child {
+        font-weight: bold;
+        color: #333;
+      }
+    }
+  }
+}
+
+// Responsive styling
+@media (max-width: 768px) {
+  .passengerTable {
+    font-size: 0.9rem;
+
+    thead {
+      th {
+        padding: 10px;
+      }
+    }
+
+    tbody {
+      td {
+        padding: 10px;
+      }
+    }
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,36 @@
+.footerContainer {
+    margin-top: 10%;
+  }
+  
+  footer {
+    .container {
+      padding: 2rem 0;
+    }
+  
+    .btn-outline-light {
+      color: #ffffff;
+      border-color: #ffffff;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        background-color: #ffffff;
+        color: #000000;
+      }
+    }
+  
+    p {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 0;
+      color: #ffffff;
+    }
+  }
+  
+  .footerBottom {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+  

@@ -1,0 +1,71 @@
+// Variables for Colors
+$primary-color: #3498db;    // Main blue color
+$secondary-color: #2ecc71;  // Green color
+$hover-color: #5dade2;      // Soft blue for hover
+$text-color: #2c3e50;       // Darker text color
+$background-color: #f0f0f0; // Light background color
+$active-color: #1abc9c;     // Active state color
+$shadow-color: rgba(0, 0, 0, 0.1);  // Subtle shadow
+
+// Navbar Styles
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $background-color;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px $shadow-color;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+// List and Items
+.navList {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+// Links Styles
+.navLink {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: $text-color;  // Initial color for the links (dark text)
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+
+    &:hover {
+        color: #5dade2;  // Soft light blue for hover
+        border-bottom: 2px solid #5dade2;  // Light blue underline on hover
+    }
+
+    &:focus {
+        outline: none;
+        border-bottom: 2px solid $active-color; // Green on focus (if needed)
+    }
+
+    &:active {
+        color: $active-color;  // Green when active (optional)
+        border-bottom: 2px solid $active-color;
+    }
+}
+
+// Responsive Behavior
+@media (max-width: 768px) {
+    .navList {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navLink {
+        padding: 15px;
+    }
+}

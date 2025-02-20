@@ -1,0 +1,44 @@
+// admin/styles/Airports/Read.module.scss
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #0066cc;
+  color: #fff;
+  font-weight: 700;
+}
+
+.table td {
+  background-color: #eef6f9;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.table tr:hover td {
+  background-color: #d7e9f4;
+}

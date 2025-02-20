@@ -1,0 +1,48 @@
+.thankYouContainer {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+}
+
+.heading {
+    font-size: 36px;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 18px;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.buttonGroup {
+    margin-top: 20px;
+}
+
+.button {
+    padding: 12px 24px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+
+    &:hover {
+        background-color: #0056b3;
+        transform: scale(1.05); // Slight zoom-in effect on hover
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); // Glow effect on focus
+    }
+
+    &:active {
+        background-color: #004085;
+        transform: scale(0.98); // Press effect when the button is clicked
+    }
+}

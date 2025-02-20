@@ -1,0 +1,43 @@
+// Read.module.scss
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  
+    th, td {
+      padding: 0.8rem;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+  
+    th {
+      background-color: #007bff; // Bootstrap primary color
+      color: white;
+    }
+  
+    tr:nth-child(even) {
+      background-color: #f2f2f2; // Zebra striping effect for rows
+    }
+  
+    tr:hover {
+      background-color: #ddd; // Highlight row on hover
+    }
+  }
+  

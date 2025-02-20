@@ -1,0 +1,67 @@
+// Main container
+.signin-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Form styling
+.signin-form {
+    width: 100%;
+    max-width: 480px;
+    background-color: #2e2e2e;
+    padding: 2rem 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+// Title and label colors in gold
+.form-title,
+.input-label {
+    color: #ffd700; // Gold color for titles and labels
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+// Input fields with gold text
+.input-field {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffd700; // Gold text for input fields
+}
+
+// Button with gold background and matching styles
+.signin-button {
+    background-color: #ffd700; // Gold background
+    color: #1a1a1a; // Dark text for contrast
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    padding: 0.8rem;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #e6b800; // Darker gold on hover
+    }
+
+    &:disabled {
+        background-color: #999999;
+        cursor: not-allowed;
+    }
+}
+
+// Error message styling
+.error-message {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}

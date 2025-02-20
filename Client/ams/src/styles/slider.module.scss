@@ -1,0 +1,30 @@
+.carousel {
+  width: 100%;
+  max-height: 80vh;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carouselCaption {
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  color: #fff;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

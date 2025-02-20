@@ -1,0 +1,84 @@
+.headerSection {
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+  }
+  
+  .aboutSection {
+    .mainImage {
+      border-radius: 20px;
+      width: 100%;
+      max-width: 950px;
+      height: auto;
+    }
+    
+    .aboutText {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+  
+    .icon {
+      height: 80px;
+      width: 70px;
+    }
+  
+    .subheading {
+      font-size: 1.5rem;
+    }
+  
+    .subText {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .promoSection {
+    .promoTitle {
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .promoImage {
+      border-radius: 20px;
+      width: 100%;
+      max-width: 1200px;
+    }
+  }
+  
+  .clientsSection {
+    text-align: center;
+  
+    .clientsTitle {
+      font-size: 2.2rem;
+    }
+  
+    .clientsSubtitle {
+      color: grey;
+      font-size: 1.8rem;
+    }
+  
+    .carouselText {
+      font-size: 1.6rem;
+    }
+  }
+  
+  .videoSection {
+    .infoCard {
+      text-align: left;
+      padding: 2rem;
+      max-width: 600px;
+      
+      h2 {
+        font-size: 2rem;
+      }
+  
+      p {
+        font-size: 1.3rem;
+        margin: 1rem 0;
+      }
+  
+      .btn {
+        font-size: 1.2rem;
+        padding: 10px;
+      }
+    }
+  }
+  

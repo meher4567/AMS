@@ -1,0 +1,46 @@
+// AdminNavBar.module.scss
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #f8f9fa;             // Light gray background for a soft look
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Soft shadow for a floating effect
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.navItem {
+    font-size: 1rem;
+}
+
+.navLink {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    color: #5a5a5a;                       // Medium gray for text contrast
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+
+    &:hover {
+        color: #f8f9fa;                   // Light text color on hover
+        background-color: #6c63ff;        // Soft lavender accent color on hover
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

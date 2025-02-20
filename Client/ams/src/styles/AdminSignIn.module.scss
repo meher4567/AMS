@@ -1,0 +1,90 @@
+// AdminSignIn.module.scss
+
+// Container styling
+.signin-container {
+    background-color: #1a1a1a;  // Dark background matching HomePage
+    color: #ffffff;             // White text for contrast
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    padding: 0 2rem;
+}
+
+// Title styling
+.signin-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffcc00;             // Matching accent color
+    margin-bottom: 0.5rem;
+}
+
+// Subtitle styling
+.signin-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #cccccc;             // Light gray for subtle contrast
+}
+
+// Form styling
+.signin-form {
+    width: 100%;
+    max-width: 400px;
+    background-color: #2e2e2e;  // Slightly lighter dark shade
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+// Input group styling
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+// Label styling
+.input-label {
+    font-size: 1rem;
+    color: #ffcc00;             // Accent color for label
+    margin-bottom: 0.5rem;
+}
+
+// Input field styling
+.input-field {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #444444;  // Dark border
+    border-radius: 5px;
+    background-color: #333333;  // Slightly lighter background for input fields
+    color: #ffffff;
+}
+
+// Button styling
+.signin-button {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    padding: 0.8rem;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #e6b800;
+    }
+}
+
+// Error message styling
+.error-message {
+    color: #ff4d4d;             // Red for error message
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}

@@ -1,0 +1,48 @@
+.container {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.planeTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 10px;
+  background-color: #fff;
+
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #0077b6;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #e6f7ff;
+    cursor: pointer;
+  }
+
+  td {
+    color: #555;
+    text-align: center;
+  }
+}

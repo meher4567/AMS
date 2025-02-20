@@ -1,0 +1,94 @@
+/* ViewTicket.module.scss */
+
+.ticketContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Full black background */
+}
+
+.ticket {
+    width: 400px;
+    padding: 20px;
+    background-color: #111; /* Slightly lighter black for contrast */
+    border-radius: 12px;
+    border: 2px solid #d4af37; /* Gold border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    color: #d4af37; /* Gold text color */
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+
+    h2 {
+        font-size: 1.8rem;
+        color: #d4af37; /* Gold */
+        margin: 0;
+    }
+
+    .ticketNumber {
+        font-size: 0.9rem;
+        color: #fff;
+        opacity: 0.8;
+    }
+}
+
+.flightDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d4af37;
+}
+
+.flightInfo,
+.routeInfo {
+    p {
+        margin: 5px 0;
+        font-size: 0.95rem;
+        color: #fff;
+    }
+
+    strong {
+        color: #d4af37; /* Gold */
+    }
+}
+
+.seatDetails {
+    text-align: center;
+    margin-top: 20px;
+
+    p {
+        font-size: 1.1rem;
+        color: #fff;
+        margin: 5px 0;
+
+        strong {
+            color: #d4af37; /* Gold */
+        }
+    }
+}
+
+/* Decorative gold lines */
+.ticket::before,
+.ticket::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #d4af37;
+}
+
+.ticket::before {
+    top: 0;
+    left: 0;
+}
+
+.ticket::after {
+    bottom: 0;
+    left: 0;
+}

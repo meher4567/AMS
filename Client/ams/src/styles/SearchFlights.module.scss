@@ -1,0 +1,177 @@
+.searchFlightsContainer {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    color: #343a40;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.formContainer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputField {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.searchButton {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    align-self: flex-end;
+}
+
+.searchButton:hover {
+    background-color: #218838;
+}
+
+.resultsContainer {
+    margin-top: 30px;
+}
+
+.resultsHeading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+.resultsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resultsTable th,
+.resultsTable td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.resultsTable th {
+    background-color: #343a40;
+    color: white;
+    font-weight: 500;
+}
+
+.resultsTable td {
+    background-color: #f1f3f5;
+    color: #495057;
+}
+
+.tableRow:nth-child(even) td {
+    background-color: #e9ecef;
+}
+
+.bookButton {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bookButton:hover {
+    background-color: #0056b3;
+}
+
+.noResults {
+    color: #868e96;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.inputGroup {
+    position: relative;
+    width: 100%;
+    max-width: 400px; // Optional max width for the search bar and suggestion table
+}
+
+.suggestionsTable {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    position: absolute;
+    z-index: 100;
+    max-height: 200px; // Restricts the height to show only a few items at a time
+    overflow-y: auto; // Adds vertical scrollbar only if content exceeds max-height
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    top: 100%; // Places the table directly below the input field
+    left: 0;
+    margin-top: 5px;
+}
+
+.suggestionsTable tbody {
+    display: block;
+    width: 100%;
+    max-height: 200px; // Ensures only a limited number of rows are shown at once
+    overflow-y: auto; // Adds scrolling within the tbody for excess items
+}
+
+.suggestionsTable tr {
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.suggestionsTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+.suggestionsTable td {
+    padding: 8px;
+    text-align: left;
+    flex: 1;
+}
+
+// Optional: Style the scrollbar for better appearance (works in modern browsers)
+.suggestionsTable::-webkit-scrollbar {
+    width: 8px; // Width of the scrollbar
+}
+
+.suggestionsTable::-webkit-scrollbar-thumb {
+    background-color: #ccc; // Color of the scrollbar thumb
+    border-radius: 4px;
+}
+
+.suggestionsTable::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
